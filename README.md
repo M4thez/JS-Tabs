@@ -5,8 +5,11 @@ To start open index.html
 
 Some example screenshots:
 
+Home view:
 ![Home view](/images/HomeView.png)
 
+Is your number prime?
 ![Prime view](/images/PrimeView.png)
 
+Current date view:
 ![Date view](/images/DateView.png)
