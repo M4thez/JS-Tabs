@@ -1,9 +1,10 @@
 # JS_Tabs
+
 Simple JS exercises as a simple SPA
 
-To start open index.html
+To start open index.html in a cloned repository folder.
 
-Some example screenshots:
+## Some example screenshots
 
 Home view:
 ![Home view](/images/HomeView.png)
