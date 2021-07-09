@@ -1,0 +1,68 @@
+* {
+    font-family: 'Segoe UI', Tahoma;
+}
+body {
+    margin: 2em;
+    background-color: whitesmoke;
+}
+input {
+  border-radius: 1em;
+  border: 1px solid #ccc ;
+  padding: 0.5em;
+  transition: background-color 0.3s ease-in-out;
+
+}
+input:focus {
+  outline: none;
+  background-color: rgba(110, 189, 253, 0.5);
+}
+button {
+  padding: .3em;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes colorFadeEffect {
+  from {background-color: inherit;}
+  to {background-color: rgba(60, 167, 255, 0.685);}
+}
+
+#randomNums_res {
+  word-wrap: break-word;
+}

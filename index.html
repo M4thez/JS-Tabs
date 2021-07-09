@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML CSS</title>
+    <link rel="stylesheet" href="tabs_styling.css">
+</head>
+
+<body>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openEx(event, 'homeTab')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openEx(event, 'primeNumber')">Primes</button>
+        <button class="tablinks" onclick="openEx(event, 'rangePrime')">Primes in range</button>
+        <button class="tablinks" onclick="openEx(event, 'convertStr')">Convert string</button>
+        <button class="tablinks" onclick="openEx(event, 'sumRange')">Sum in range</button>
+        <button class="tablinks" onclick="openEx(event, 'fancyStr')">Fancy string</button>
+        <button class="tablinks" onclick="openEx(event, 'connectStr')">Connect strings</button>
+        <button class="tablinks" onclick="openEx(event, 'randomNums')">Random numbers</button>
+        <button class="tablinks" onclick="openEx(event, 'aboutDates')">Dates</button>
+
+    </div>
+
+    <!-- Tab content -->
+    <div id="homeTab" class="tabcontent">
+        <h1>Welcome!</h1>
+        <p>This is Your home tab. The collection of solved exercises awaits. Click on the buttons on the top to begin your journey.</p>
+    </div>
+    <!-- Ex.2.1 -->
+    <div id="primeNumber" class="tabcontent">
+        <p>Check if your number is a prime number</p>
+        <input type="number" placeholder="Input the number" id="cp_value">
+        <button onclick="getcp_value()">Check</button>
+        <p>Result: <span id="cp_res"></span></p>
+    </div>
+    <!-- Ex.2.2 -->
+    <div id="rangePrime" class="tabcontent">
+        <p>Check which numbers between defined boundaries are prime</p>
+        <input type="number" placeholder="Input range head" id="startcpr_value">
+        <input type="number" placeholder="Input range tail" id="endcpr_value">
+        <button onclick="checkRangePrime()">Check</button>
+        <p id="cpr_res">Result: </p>
+    </div>
+    <!-- Ex.2.4 -->
+    <div id="convertStr" class="tabcontent">
+        <p>Convert your string in a desired way:</p>
+        <ol>
+            <li>To upper case</li>
+            <li>To lower case</li>
+            <li>To drunk case</li>
+            <li>... or don't change it at all</li>
+        </ol>
+        <input type="text" placeholder="Your string" id="convStrTxt_value">
+        <input type="number" placeholder="Chosen number" id="convStrNum_value">
+        <button onclick="convertStr()">Convert</button>
+        <p>Result: <span id="convStr_res"></span></p>
+    </div>
+    <!-- Ex.2.5 -->
+    <div id="sumRange" class="tabcontent">
+        <p>Check sum of numbers between defined boundaries</p>
+        <input type="number" placeholder="Input range head" id="startsr_value">
+        <input type="number" placeholder="Input range tail" id="endsr_value">
+        <p>Method:</p>
+        <input type="radio" id="sr_for_radio" name="sr_radio" value="for_value" checked>
+        <label for="sr_for_radio">for</label>
+        <input type="radio" id="sr_while_radio" name="sr_radio" value="while_value">
+        <label for="sr_while_radio">while</label>
+        <button onclick="sumRange()">Check</button>
+        <p>Sum: <span id="sumRange_res"></span></p>
+    </div>
+    <!-- Ex.2.6 -->
+    <div id="fancyStr" class="tabcontent">
+        <p>Change your string in a fancy (at least 8 characters)</p>
+        <p>Some fun examples to try: Your name, 'Lewandowski', 'sukinkot'</p>
+        <input type="text" placeholder="Your string" id="fancyStr_value">
+        <button onclick="fancyStr()">Convert</button>
+        <p>Result: <span id="fancyStr_res"></span></p>
+    </div>
+    <!-- Ex. 1.2 -->
+    <div id="connectStr" class="tabcontent">
+        <p>Concatenate your strings</p>
+        <input type="text" placeholder="String one" id="connectStr1_value">
+        <input type="text" placeholder="String two" id="connectStr2_value">
+        <input type="text" placeholder="String three" id="connectStr3_value">
+        <button onclick="connectStr()">Concatenate</button>
+        <p>Result: <span id="connectStr_res"></span></p>
+    </div>
+    <!-- Ex. 1.8 -->
+    <div id="randomNums" class="tabcontent">
+        <p>Generate <b>N</b> random numbers in a given range</p>
+        <input type="number" placeholder="N numbers" id="nRand_value">
+        <input type="number" placeholder="Input range head" id="aRand_value">
+        <input type="number" placeholder="Input range tail" id="bRand_value">
+        <button onclick="randomNums()">Generate</button>
+        <p id="randomNums_res"></p>
+    </div>
+    <div id="aboutDates" class="tabcontent">
+        <p>This one is all about dates, click on the button below to find out <i><b>when</b></i> do you actually live</p>
+        <button onclick="aboutDates()">Dates</button>
+        <p id="todayDate"></p>
+        <p id="weekAgoDate"></p>
+        <p id="monthLaterDate"></p>
+    </div>
+    
+    <script src="layout.js"></script>
+    <script src="logic.js"></script>
+</body>
+</html>
