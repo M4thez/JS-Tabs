@@ -1,4 +1,4 @@
-# JS_Tabs
+# JS-Tabs
 
 Simple JS exercises as a simple SPA
 
